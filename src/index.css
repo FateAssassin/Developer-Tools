@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import "bootstrap-icons/font/bootstrap-icons";
+@custom-variant hover (&:hover);
+@custom-variant dark (&:where(.dark, .dark *));
+@font-face {
+  font-family: 'Discord';
+  src: url('./assets/discord-font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.font-discord {
+  font-family: 'Discord', sans-serif;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
