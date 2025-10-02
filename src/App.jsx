@@ -1,9 +1,9 @@
-import { useState, useContext } from "react"
+import { useState } from "react"
 import EmbedBuilder from "./tabs/embed-builder"
 import TextToString from "./tabs/text-to-string";
 import Footer from "./components/footer";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import Alert from "./components/alert";
+import Alert from "./components/Alert";
 
 function App() {
   const [activeTab, setActiveTab] = useState("embed-builder");
