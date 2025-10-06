@@ -207,12 +207,12 @@ export default function EmbedBuilder() {
       
       {/* URL */}
       <div className="mb-4">
-        <label className="block mb-1 font-medium dark:text-gray-200">URL</label>
+        <label className="block mb-1 font-medium dark:text-gray-200">Title URL</label>
         <input
           className="w-full px-2 py-1 border border-gray-300 dark:border-gray-700 rounded-sm bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100"
           value={titleURL}
           onChange={(e) => setTitleURL(e.target.value)}
-          placeholder="Embed URL"
+          placeholder="Embed Title URL"
           maxLength={256}
         />
       </div>
