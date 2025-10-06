@@ -199,7 +199,7 @@ export default function EmbedBuilder() {
             className="w-full px-2 py-1 border border-gray-300 dark:border-gray-700 rounded-sm bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100"
             value={authorIcon}
             onChange={(e) => setAuthorIcon(e.target.value)}
-            placeholder="Author Icon URL"
+            placeholder="Author Icon URL AA"
             maxLength={256}
           />
         </div>
