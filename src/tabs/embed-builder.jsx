@@ -11,7 +11,7 @@ export default function EmbedBuilder() {
   const [author, setAuthor] = useState("");
   const [authorURL, setAuthorURL] = useState("");
   const [authorIcon, setAuthorIcon] = useState("");
-  const [url, setURL] = useState("");
+  const [titleURL, setTitleURL] = useState("");
   const [description, setDescription] = useState("Description");
   const [color, setColor] = useState("#5865F2");
   const [fields, setFields] = useState([]);
@@ -81,7 +81,7 @@ export default function EmbedBuilder() {
                 ...(authorIcon ? { icon_url: authorIcon } : {}),
               }
             : undefined,
-          url: url || undefined,
+          url: titleURL || undefined,
         },
       ],
     };
@@ -211,7 +211,7 @@ export default function EmbedBuilder() {
         <input
           className="w-full px-2 py-1 border border-gray-300 dark:border-gray-700 rounded-sm bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100"
           value={url}
-          onChange={(e) => setURL(e.target.value)}
+          onChange={(e) => setTitleURL(e.target.value)}
           placeholder="Embed URL"
           maxLength={256}
         />
@@ -434,8 +434,8 @@ export default function EmbedBuilder() {
                       overflowWrap: "break-word",
                     }}
                   >
-                    {url ? (
-                      <a href={url} target="_blank" rel="noopener noreferrer">
+                    {titleURL ? (
+                      <a href={titleURL} target="_blank" rel="noopener noreferrer">
                         <strong className="text-blue-400 hover:underline">{title}</strong>
                       </a>  
                     ) : (
