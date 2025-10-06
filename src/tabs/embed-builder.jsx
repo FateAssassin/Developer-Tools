@@ -129,7 +129,7 @@ export default function EmbedBuilder() {
           authorURL ? `, url="${escape(authorURL)}"` : ""
         }${authorIcon ? `, icon_url="${escape(authorIcon)}"` : ""})`
       : "",
-    url ? `embed.url = "${escape(url)}"` : "",
+    titleURL ? `embed.url = "${escape(titleURL)}"` : "",
     `await ctx.send(${message ? `"${escape(message)}", ` : ""}embed=embed)`,
   ];
 
